@@ -1,10 +1,11 @@
-import java.util.Arrays;
-
-
 public class Main {
     public static void main(String[] args) {
         board board01 = new board();
         board01.initialiseBoard();
-        System.out.print(board01.printBoard(0,1));
+        board01.printBoard();
+        board01.fillBoard(5, 5);
+        board01.showBombs ();
+        board01.printBoard();
+
     }
 }
