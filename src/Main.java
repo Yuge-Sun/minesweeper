@@ -6,6 +6,9 @@ public class Main {
         board01.fillBoard(5, 5);
         board01.showBombs ();
         board01.printBoard();
+        board01.calcAdjacentNum();
+        board01.showAllNum();
+        board01.printBoard();
 
     }
 }

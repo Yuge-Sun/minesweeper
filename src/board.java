@@ -13,6 +13,7 @@ public class board {
             for (int j = 0; j < 11; j++) {
                 this.bombGrid[i][j] = false;
                 this.UIGrid[i][j] = "◻";
+                this.adjacentNum[i][j] = 0;
             }
         }
     }
@@ -67,12 +68,29 @@ public class board {
             }
         }
     }
+    public void showAllNum () {
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 10; j++) {
+                UIGrid[i][j] = String.valueOf(adjacentNum[i][j]);
+            }
+        }
+    }
 
     public void calcAdjacentNum () {
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j < 10; j++) {
-
-
+                for (int k = -1; k <2; k++) {
+                    for (int l = -1; l <2; l++) {
+                        if (k==0 && l==0) {
+                            ;
+                        }
+                        else {
+                            if (bombGrid[i+k][j+l] == true) {
+                                adjacentNum[i][j] += 1;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
