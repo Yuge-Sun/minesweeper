@@ -43,7 +43,7 @@ public class board {
     public void printBoard() {
         for (int i = 0; i < 10; i++){
             if (i==0){
-                System.out.print(colours.ANSI_CYAN+"\n\t1\t2\t3\t4\t5\t6\t7\t8\t9\n"+colours.ANSI_RESET );
+                System.out.print(colours.ANSI_CYAN+"\t1\t2\t3\t4\t5\t6\t7\t8\t9\n"+colours.ANSI_RESET );
             }
             else{
                 for (int j = 0; j < 10; j++) {

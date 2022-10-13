@@ -12,7 +12,7 @@ public class Main {
             boolean resetBoard = false;
             board01.initialiseBoard();
             board01.printBoard();
-            System.out.println("Welcome to Minesweeper! \nPlease select a square to dig \n Enter X Coordinate: ");
+            System.out.println("Welcome to Minesweeper! \nPlease select a square to start digging \n Enter X Coordinate: ");
             uX = userinput.nextInt();
             userinput.nextLine();
             System.out.println("Enter Y Coordinate: ");
